@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freedom Over Fear | Sacred Feminine Recovery™</title>
+<meta name="description" content="Loving Your Addicted Adult Child Without Losing Yourself. Download the free guide for mothers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F6EFE2; --cream-deep:#EEE3CF; --sage:#A8B79F; --sage-deep:#587052;
+  --rose:#C99A9A; --rose-soft:#E8D3CE; --gold:#B89A5E; --taupe:#8A7563; --taupe-deep:#5E4D40; --ink:#4E4036;
+  --serif:"Fraunces",Georgia,serif; --sans:"Figtree",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font:400 1.0625rem/1.7 var(--sans)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+.logo{font:500 1.35rem/1.1 var(--serif);color:var(--ink);text-decoration:none}
+.logo span{display:block;font:400 .82rem var(--sans);color:var(--taupe);margin-top:.25rem}
+nav a.link{font-weight:600;color:var(--sage-deep);text-decoration:underline;text-underline-offset:4px}
+
+/* hero: left-aligned copy + arched lantern card */
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center;padding-top:2rem;padding-bottom:5rem}
+.tag{font:italic 400 1.2rem var(--serif);color:var(--rose);margin-bottom:1rem;color:#9C6B6B}
+h1{font:400 clamp(2.4rem,5vw,4rem)/1.12 var(--serif);letter-spacing:-.01em;margin-bottom:1.4rem}
+.lede{max-width:33rem;color:var(--taupe-deep);margin-bottom:1.5rem}
+.checks{list-style:none;padding:0;display:grid;gap:.5rem;color:var(--taupe-deep)}
+.checks li{padding-left:1.9rem;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:.5em;width:.9rem;height:.9rem;border-radius:50% 0 50% 0;background:var(--sage)}
+.arch{background:linear-gradient(180deg,#FBF3DF,var(--rose-soft));border:2px solid var(--gold);border-radius:999px 999px 1.5rem 1.5rem;padding:2.2rem 1.8rem 2rem;text-align:center;box-shadow:0 0 0 10px var(--cream),0 0 0 11px var(--gold)}
+.lantern{width:6.5rem;margin:0 auto .5rem;display:block;overflow:visible}
+.glow{animation:flicker 4s ease-in-out infinite;transform-origin:50% 55%}
+@keyframes flicker{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+.arch h2{font:400 1.7rem/1.2 var(--serif);margin-bottom:.4rem}
+.arch p.sub{font-size:.98rem;color:var(--taupe-deep);margin-bottom:1.2rem}
+
+/* form */
+.signup{text-align:left}
+.signup label{display:block;font-weight:600;font-size:.95rem;margin-bottom:.35rem}
+.signup input[type=email]{width:100%;padding:.9rem 1.1rem;font:inherit;color:var(--ink);background:#FFFBF3;border:1.5px solid var(--sage);border-radius:.8rem}
+.signup input::placeholder{color:#8f7f70}
+.btn{width:100%;margin-top:.8rem;padding:1rem 1.5rem;font:600 1rem var(--sans);color:#FFFBF3;background:var(--sage-deep);border:0;border-radius:.8rem;cursor:pointer;transition:background .2s}
+.btn:hover{background:#46593F}
+.note{font-size:.86rem;color:var(--taupe-deep);margin-top:.7rem;text-align:center}
+.err{color:#8A3F3F;font-size:.92rem;min-height:1.3em;margin-top:.4rem}
+.thanks{display:none;text-align:center;padding:.5rem 0}
+.thanks h3{font:400 1.7rem/1.2 var(--serif);margin-bottom:.4rem}
+.signup.done form{display:none}
+.signup.done .thanks{display:block;animation:fade .6s ease-out both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+/* story */
+.story{background:var(--rose-soft);padding:5rem 0;position:relative}
+.story .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:start}
+.story h2{font:400 clamp(1.9rem,3.6vw,2.7rem)/1.18 var(--serif)}
+.story p{max-width:36rem}
+.story p+p{margin-top:1rem}
+.sig{font:italic 400 1.4rem var(--serif);margin-top:1.4rem;color:#7B4F4F}
+
+/* promise: taupe lantern-lit band */
+.promise{background:var(--taupe-deep);color:var(--cream);padding:5rem 0}
+.promise h2{font:400 clamp(1.9rem,3.6vw,2.7rem)/1.18 var(--serif);max-width:20em;margin-bottom:2.5rem}
+.promise ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+.promise li{border-left:2px solid var(--gold);padding-left:1.2rem}
+.promise h3{font:500 1.3rem/1.25 var(--serif);margin-bottom:.4rem;color:#EBD9AE}
+.promise li p{color:var(--cream-deep)}
+
+/* closing */
+.close{padding:5rem 0;text-align:center}
+.close h2{font:400 clamp(1.9rem,3.6vw,2.7rem)/1.18 var(--serif);margin-bottom:1rem}
+.close .btn{display:inline-block;width:auto;text-decoration:none;margin-top:1rem}
+footer{background:var(--cream-deep);text-align:center;padding:2rem 1.5rem;font-size:.9rem;color:var(--taupe-deep)}
+@media(max-width:820px){.hero .wrap,.story .wrap{grid-template-columns:1fr;gap:2.5rem}.hero .wrap{padding-bottom:3.5rem}.story,.promise,.close{padding:3.5rem 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap"><nav>
+  <a class="logo" href="#top">Freedom Over Fear<span>Sacred Feminine Recovery™</span></a>
+  <a class="link" href="#get-guide">Free guide</a>
+</nav></div>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <p class="tag">Loving Your Addicted Adult Child Without Losing Yourself.</p>
+    <h1>After years of fear, there is a gentler way to carry your love.</h1>
+    <p class="lede">Freedom Over Fear is a quiet place for mothers of addicted adult children to reclaim their peace, set healthy boundaries, and rediscover themselves.</p>
+    <ul class="checks">
+      <li>Calm for the days when worry takes over</li>
+      <li>Boundaries that protect you without closing your heart</li>
+      <li>A path back to the woman you were before the fear</li>
+    </ul>
+  </div>
+
+  <div class="arch" id="get-guide">
+    <svg class="lantern" viewBox="0 0 100 150" aria-hidden="true">
+      <circle class="glow" cx="50" cy="85" r="46" fill="#E9C77E" opacity=".35"/>
+      <path d="M50 4v14M38 22h24l-4-6H42z" stroke="#B89A5E" stroke-width="3" fill="#B89A5E" stroke-linejoin="round"/>
+      <path d="M36 24h28l8 16v54c0 8-6 14-14 14H42c-8 0-14-6-14-14V40z" fill="#FBEFCF" stroke="#B89A5E" stroke-width="3"/>
+      <path d="M50 54c8 8 10 16 0 28-10-12-8-20 0-28z" fill="#E9B65A"/>
+      <path d="M36 24v84M64 24v84" stroke="#B89A5E" stroke-width="1.5" opacity=".6"/>
+      <path d="M32 112h36l-4 10H36z" fill="#B89A5E"/>
+    </svg>
+    <h2>Your free guide</h2>
+    <p class="sub">[Guide title]: gentle, practical steps to find your footing again.</p>
+    <div class="signup" id="signup">
+      <form novalidate>
+        <label for="email">Email address</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <p class="err" role="alert"></p>
+        <button class="btn" type="submit">Send me the free guide</button>
+        <p class="note">Your email stays private. Unsubscribe anytime.</p>
+      </form>
+      <div class="thanks" role="status" tabindex="-1">
+        <h3>Thank you, dear one.</h3>
+        <p>Your guide is on its way. Please check your inbox, and your promotions or spam folder, in the next few minutes.</p>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<section class="story"><div class="wrap">
+  <h2>I know this road, and you are not walking it alone.</h2>
+  <div>
+    <p>Hello, I’m [Founder name]. For years I lived on high alert, bracing for the next call and trying to save someone I love with everything I had.</p>
+    <p>What I found on the other side was not a cure for my fear but a way of living with it: through boundaries, rest, and a return to my own sacred feminine center. I created Sacred Feminine Recovery™ to share that path with other mothers.</p>
+    <p class="sig">With love, [Founder name]</p>
+  </div>
+</div></section>
+
+<section class="promise"><div class="wrap">
+  <h2>What you will find here</h2>
+  <ul>
+    <li><h3>Understanding</h3><p>No judgment, only mothers who know what you carry.</p></li>
+    <li><h3>Practical peace</h3><p>Tools you can use today, in the middle of a hard week.</p></li>
+    <li><h3>Hope</h3><p>A reminder that your life can hold joy again.</p></li>
+  </ul>
+</div></section>
+
+<section class="close"><div class="wrap">
+  <h2>Take the first quiet step.</h2>
+  <p>Your guide is waiting, free and with no pressure.</p>
+  <a class="btn" href="#get-guide">Get the free guide</a>
+</div></section>
+</main>
+
+<footer>freedomoverfear.mom · © <span id="yr"></span> Freedom Over Fear. Sacred Feminine Recovery™</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const box=document.getElementById('signup'),form=box.querySelector('form'),err=box.querySelector('.err'),thanks=box.querySelector('.thanks');
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const v=form.email.value.trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){err.textContent='Please enter a valid email address, like name@example.com.';form.email.focus();return}
+  err.textContent='';
+  /* TODO: connect to email provider (Kit, Mailchimp, MailerLite) here, e.g. fetch(FORM_ACTION,{method:'POST',body:new FormData(form)}) */
+  box.classList.add('done');thanks.focus();
+});
+document.querySelector('a.btn[href="#get-guide"]').addEventListener('click',()=>setTimeout(()=>form.email.focus({preventScroll:true}),400));
+</script>
+</body>
+</html>
